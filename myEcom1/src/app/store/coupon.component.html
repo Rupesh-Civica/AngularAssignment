@@ -1,0 +1,64 @@
+
+<style>
+body{
+    background:#eee;
+}
+
+.card {
+  width: 350px;
+  padding: 10px;
+  border-radius: 20px;
+  background: orange;
+  border: none;
+  color: #fff;
+  height: 350px;
+  display: flex;
+  position: relative;
+
+
+}
+
+.container {
+  height: 100vh;
+}
+
+.card h1 {
+  font-size: 48px;
+  margin-bottom: 0px;
+}
+
+.card span {
+  font-size: 28px;
+}
+
+.image {
+  position: absolute;
+  opacity: .1;
+  left: 0;
+  top: 0;
+}
+
+.image2 {
+  position: absolute;
+  bottom: 10;
+  right: 0;
+  opacity: .1;
+  margin-top: 70px;
+}
+
+</style>
+<div class="d-flex justify-content-center align-items-center container">
+  <div class="d-flex card text-center">
+    <div class="d-flex justify-content-end" style="width:100%;"><button class="btn btn-close " (click)="cart.deactivateCoupons()"  routerLink="/store"></button></div>
+      <div class="image"><img src="https://i.imgur.com/DC94rZe.png" width="150"></div>
+      <div class="image2"><img src="https://i.imgur.com/DC94rZe.png" width="150"></div>
+      <h1>10% OFF</h1><span class="d-block">On Everything</span><span class="d-block">Today</span>
+      <div class="mt-2"><button class="btn btn-warning" (click)="cart.activeCoupons()" routerLink="/store">SUMMERSALE10</button>
+      </div>
+      <div class="mt-2"><small>Use this coupon Code for getting 10% Discount in your Purchase.</small></div>
+
+
+  </div>
+</div>
+
+

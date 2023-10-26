@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col bg-dark text-white">
+      <a class="navbar-brand">SPORTS STORE</a>
+      <cart-summary></cart-summary>
+    </div>
+  </div>
+
+
+
+<div class="container-fluid col-md-5 mt-5 ">
+  <div class="card  text-body bg-light mb-3 p-3 " style="width:40rem; height: 20rem;">
+    <div class="card-body ">
+      <h1 class="card-title">{{product.name}}</h1>
+      <span class="badge badge-pill badge-primary float-right " style="color: blue;">
+        <h5>
+        <strong>Price :</strong> {{ product.price| currency:"USD":"symbol":"2.2-2" }}
+        </h5>
+      </span>
+      <h5><strong>Desciption : </strong>{{product.description}}</h5>
+      <p class="card-text"></p>
+      <button class="btn btn-success" (click)="addToCart(product)">Add to cart</button>
+    </div>
+  </div>
+</div>
+
+
